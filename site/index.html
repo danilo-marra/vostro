@@ -9,6 +9,10 @@
     <link rel="icon" href="../../../../favicon.ico">
     <title>Vostro</title>
 
+    <!-- Fontes Extras -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+
     <!-- Icones Fontawesome 5.2.0-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
@@ -20,6 +24,7 @@
     <link rel="stylesheet" href="css/estilo.css">
     <!-- Estilo Carousel  -->
     <link rel="stylesheet" href="css/carousel.css">
+
 </head>
 
 <body>
@@ -37,90 +42,92 @@
         }(document, 'script', 'facebook-jssdk'));
     </script>
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand" href="#">Vostro</a>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top ">
+
+            <a class="navbar-brand" href="#">
+                <img src="imagens/vostro_pequena.png" alt="Logo Vostro Barbieri">
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
+
+                <ul class="navbar-nav ml-auto mr-5">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#servicos">Serviços</a>
+                        <a class="nav-link" href="#servicos">SERVIÇOS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#equipe">Equipe</a>
+                        <a class="nav-link" href="#equipe">EQUIPE</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#localizacao">Localização</a>
+                        <a class="nav-link" href="#localizacao">LOCALIZAÇÃO</a>
                     </li>
                 </ul>
-                <div class="socialBar">
-                    <a href="">
-                        <i class="fab fa-instagram fa-2x"></i>
-                    </a>
-                    <a href="">
-                        <i class="fab fa-facebook fa-2x"></i>
-                    </a>
-                </div>
+                <ul class="navbar-nav navbar-text">
+                    <a href="https://www.instagram.com/vostro.barbieri/"><i class="fab fa-instagram fa-3x"></i></a>
+                    <a href="https://www.facebook.com/vostro.barbieri/"><i class="fab fa-facebook fa-3x"></i></a>
+                </ul>
             </div>
         </nav>
+
+
     </header>
 
-    <main role="main">
+    <main id="wrapperPrincipal" role="main">
 
-
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="first-slide " src="imagens/vostroLogoHorizontal.png" alt="Logo Vostro Barbieri">
+        <div id="home">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="first-slide " src="imagens/vostroLogoHorizontal.png" alt="Logo Vostro Barbieri">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="second-slide" src="imagens/interiorLoja.jpg" alt="Imagem Interior Loja">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="third-slide" src="imagens/interiorLoja2.jpg" alt="Imagem Interior Loja e Funcionários">
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="second-slide" src="imagens/interiorLoja.jpg" alt="Imagem Interior Loja">
-                </div>
-                <div class="carousel-item">
-                    <img class="third-slide" src="imagens/interiorLoja2.jpg" alt="Imagem Interior Loja e Funcionários">
-                </div>
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
             </div>
-            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Próximo</span>
-            </a>
         </div>
 
 
         <div id="servicos">
+
             <div class="container text-center">
                 <h1>Serviços</h1>
                 <div class="row">
                     <div class="col-xl-4">
-                        <h2 class="text-muted">Corte</h2>
+                        <h2 class="">Corte</h2>
                         <img class="rounded" src="imagens/imagem_servicos1.jpg" alt="Imagem Corte de Cabelo" width="260" height="160">
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed tortor consectetur nulla
                             imperdiet tristique a ut tellus.</p>
                     </div>
                     <div class="col-xl-4">
-                        <h2 class="text-muted">Sobrançelha</h2>
+                        <h2 class="">Sobrançelha</h2>
                         <img class="rounded" src="imagens/imagem_servicos1.jpg" alt="Imagem Corte de Cabelo" width="260" height="160">
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed tortor consectetur nulla
                             imperdiet tristique a ut tellus.</p>
                     </div>
                     <div class="col-xl-4">
-                        <h2 class="text-muted">Barba</h2>
+                        <h2 class="">Barba</h2>
                         <img class="rounded" src="imagens/imagem_servicos1.jpg" alt="Imagem Corte de Cabelo" width="260" height="160">
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed tortor consectetur nulla
                             imperdiet tristique a ut tellus.</p>
@@ -136,7 +143,7 @@
         <!-- Wrap the rest of the page in another container to center all the content. -->
 
         <section class="container redesSociais">
-            <div class="row">
+            <div class="row slideanim">
                 <div class="col-sm-12 text-center">
                     <h1>Instagram</h1>
                     <!-- LightWidget WIDGET <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/85f34bfa40d35fdeac4b9ade0aaf682c.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>-->
@@ -145,16 +152,16 @@
         </section>
 
         <div id="videoSecao">
-        <section class=" container text-center">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="embed-responsive embed-responsive-21by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+            <section class=" container text-center">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="embed-responsive embed-responsive-21by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </div>
+            </section>
+        </div>
 
         <!--<div class="col-sm-6">
                         <div class="row">
@@ -178,7 +185,7 @@
         <div id="equipe">
             <section class="equipe container">
                 <h1 class="text-center equipeTitulo">Equipe</h1>
-                <div class="row">
+                <div class="row slideanim">
                     <!-- Início Funcionario Coluna 1 **OBS: Imagens precisam estar em 280x180-->
                     <div class="col-xl-6">
                         <div class="row text-center">
@@ -311,42 +318,49 @@
 
             <hr class="featurette-divider">
 
-
-
-            
             <div id="localizacao">
-                    
-                    <h1 class="text-center">Localização</h1>
-                    <iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ773RyOExWpMR1afJ2_4EEfg&key=AIzaSyBXg3kLQsuHqopj49NYeMmIUv7isW_sU0Y" allowfullscreen></iframe>
-                    <section class="googleMapsSecao container-fluid"></section>
-                    <address>
-                        <strong>Endereço</strong>: Área Especial 4 Lote G/H Loja 14 Edifício Olympique, Guará II, Brasília - DF,
-                        71070-641
-                        <br>
-                        <strong>Telefone</strong>: (61) 99392-9601
-                        <br>
-                        <strong>Email</strong>:
-                        <br>
-                        <strong>Horário</strong>: segunda a sexta - 11h às 21h/30 / sábado - 09h às 20h / domingo - fechado
-                    </address>
+                <h1 class="text-center">Localização</h1>
+                <iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ773RyOExWpMR1afJ2_4EEfg&key=AIzaSyBXg3kLQsuHqopj49NYeMmIUv7isW_sU0Y"
+                    allowfullscreen></iframe>
+                <section class="googleMapsSecao container-fluid"></section>
+                <section class="endereco container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <address>
+                                <strong>Endereço</strong>: Área Especial 4 Lote G/H Loja 14 Edifício Olympique, Guará II, Brasília
+                                - DF, 71070-641
+                                <br>
+                                <strong>Telefone</strong>: (61) 99392-9601
+                                <br>
+                                <!-- <strong>Email</strong>:-->
+                                <br>
+                                <strong>Horário</strong>: segunda a sexta - 11h às 21h/30 / sábado - 09h às 20h / domingo - fechado
+                            </address>
+                        </div>
+                    </div>
+                </section>
                 </section>
             </div>
 
 
             <!-- FOOTER -->
 
-            <!-- Apenas Curtir-->
-            <!-- <div class="fb-like" data-href="https://www.facebook.com/vostro.barbieri/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <!-- Apenas Curtir-->
+                        <!-- <div class="fb-like" data-href="https://www.facebook.com/vostro.barbieri/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>-->
+                    </div>
+                </div>
+            </div>
+
+
 
             <footer class="container text-center">
                 <div class="fb-page" data-href="https://www.facebook.com/facebook" data-width="380" data-hide-cover="false" data-show-facepile="false"></div>
                 <div class="socialBarFooter">
-                    <a href="https://www.instagram.com/vostro.barbieri/">
-                        <i class="fab fa-instagram fa-2x"></i>
-                    </a>
-                    <a href="https://www.facebook.com/vostro.barbieri/">
-                        <i class="fab fa-facebook fa-2x"></i>
-                    </a>
+                    <a href="https://www.instagram.com/vostro.barbieri/"><i class="fab fa-instagram fa-3x"></i></a>
+                    <a href="https://www.facebook.com/vostro.barbieri/"><i class="fab fa-facebook fa-3x"></i></a>
                 </div>
                 <div>
                     <a href="http://www.vostrobarbieri.com.br">
@@ -354,26 +368,63 @@
                         <strong>vostrobarbieri</strong>.com.br
                     </a>
                 </div>
-                <p class="float-right">
-                    <a href="#container logo">Voltar ao topo</a>
-                </p>
                 <p>Todos os direitos reservados | &copy; 2018 Desenvolvido por
                     <a href="http://www.danilomarra.com.br">Danilo Marra</a> &middot;
                     <a href="http://danilomarra.com.br/politica.html">Privacidade</a> &middot;
                     <a href="http://danilomarra.com.br/politica.html">Termos de Uso</a>
                 </p>
-            </footer>
-    </main>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <a href="#home" title="Ir para o topo">
+                    <i class="fas fa-chevron-up"></i>
+                </a>
+            </footer>
+            
+    </main>
+    <!-- JS, JQUERY, Carousel e slideanim-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-    <script src="js/holder.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+
+            $(window).scroll(function () {
+                $(".slideanim").each(function () {
+                    var pos = $(this).offset().top;
+
+                    var winTop = $(window).scrollTop();
+                    if (pos < winTop + 600) {
+                        $(this).addClass("slide");
+                    }
+                });
+            });
+        })
+    </script>
 </body>
 
 </html>
