@@ -1,112 +1,194 @@
 /* Geral */
-body {
- 
-}
 
-#wrapperPrincipal {
+body {}
 
-}
+#wrapperPrincipal {}
 
 h1 {
-  margin-bottom: 45px;
-  color: #391e23;
+    margin-bottom: 45px;
+    color: #391e23;
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
 }
 
-h2, h3, h4, .text-muted {
-  color: #6c2835
+h2,
+h3,
+h4,
+.text-muted {
+    color: #6c2835;
+    font-family: Lato, sans-serif;
+}
+
+p {
+    margin-top: 5px;
+    font-family: Lato, sans-serif;
+}
+
+address {
+    font-family: Lato, sans-serif;
 }
 
 a {
-  color: #6c2835;
+    color: #6c2835;
 }
 
 a:hover {
-  color: #2a0c12;
+    color: #2a0c12;
 }
-
-
 
 /* Navbar menu */
+
 .navbar-logo {
     width: 90px;
-  }
+}
 
-  /*Video*/
-  #videoSecao {
+/* Serviços */
+
+.tituloPreco {
+    font-size: 1em;
+}
+
+.tagPreco {
+    float: right;
+    font-size: 1.2em;
+    color: #6c2835;
+}
+
+.btn-primary {
+    background-color: #6c2835;
+    border-color: #391e23;
+}
+
+.btn-primary:hover {
+    background-color: #f4f4f4;
+    color: #6c2835;
+    border-color: #6c2835;
+}
+
+/*Video*/
+
+#videoSecao {
     background-color: #f4f4f4;
     padding: 30px;
-  }
+}
 
-  /*Equipe*/
-  .equipeTitulo {
+
+/*Equipe*/
+
+.equipeTitulo {
     margin-top: 45px;
-  }
+}
 
-  .equipe img {
+.equipe img {
     margin-bottom: 25px;
-  }
-
-
-@media (min-width: 992px) { 
-  .equipe p {
-    text-align: left;
-  }
- }
-
- /** SLIDE MENU **/
- .slideanim {visibility:hidden;}
- .slide {
-     animation-name: slide;
-     -webkit-animation-name: slide;
-     animation-duration: 1s;
-     -webkit-animation-duration: 1s;
-     visibility: visible;
- }
- @keyframes slide {
-   0% {
-     opacity: 0;
-     transform: translateY(70%);
-   } 
-   100% {
-     opacity: 1;
-     transform: translateY(0%);
-   }
- }
- @-webkit-keyframes slide {
-   0% {
-     opacity: 0;
-     -webkit-transform: translateY(70%);
-   } 
-   100% {
-     opacity: 1;
-     -webkit-transform: translateY(0%);
-   }
- }
-
- .navbar {
-  margin-bottom: 0;
-  background-color: #6c2835;
-  z-index: 9999;
-  border: 0;
-  font-size: 12px !important;
-  line-height: 1.42857143 !important;
-  letter-spacing: 4px;
-  border-radius: 0;
-  font-family: Montserrat, sans-serif;
 }
-.navbar li a, .navbar .navbar-brand {
-  color: #fff !important;
+
+
+@media (min-width: 992px) {
+    .equipe p {
+        text-align: left;
+    }
 }
-.navbar-nav li a:hover, .navbar-nav li.active a {
-  color: #6c2835 !important;
-  background-color: #fff !important;
+
+/** SLIDE MENU **/
+
+.slideanim {
+    visibility: hidden;
 }
+
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #6c2835;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+.navbar li a,
+.navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+    color: #6c2835 !important;
+    background-color: #fff !important;
+}
+
 .navbar-default .navbar-toggle {
-  border-color: transparent;
-  color: #fff !important;
+    border-color: transparent;
+    color: #fff !important;
 }
 
 .socialBar {
-  float: right;
+    float: right;
 }
 
+/* Header Parallax Element Style*/
+
+.paral {
+    min-height: 720px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+/* Image for Parallax Section */
+
+.paralsec {
+    background-image: url("../imagens/rs_vostro_horiz.jpg");
+}
+
+
+@media (max-width: 991.98px) {
+    .paralsec {
+        background-image: url("../imagens/rs_vostro_vert.jpg");
+    }
+
+    .paral {
+        min-height: 779px;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+}
+
+
+
+.jumbotron {
+    margin-bottom: 0;
+}

@@ -14,24 +14,29 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 
     <!-- Icones Fontawesome 5.2.0-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Estilo CSS -->
     <link rel="stylesheet" href="css/estilo.css">
     <!-- Estilo Carousel  -->
     <link rel="stylesheet" href="css/carousel.css">
 
+    <style>
+
+
+    </style>
+
+
 </head>
 
 <body>
+
     <!-- Javascript para o Facebook-->
     <div id="fb-root"></div>
     <script>
-        (function (d, s, id) {
+        (function(d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) return;
             js = d.createElement(s);
@@ -40,15 +45,16 @@
                 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.0&appId=1253474161445575&autoLogAppEvents=1';
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
+
     </script>
     <header>
+
         <nav class="navbar navbar-expand-md navbar-dark fixed-top ">
 
             <a class="navbar-brand" href="#">
                 <img src="imagens/vostro_pequena.png" alt="Logo Vostro Barbieri">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-                aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -79,18 +85,17 @@
 
     <main id="wrapperPrincipal" role="main">
 
+        <!-- Parallax Section -->
+        <div class="jumbotron paral paralsec"></div>
+
         <div id="home">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="first-slide " src="imagens/vostroLogoHorizontal.png" alt="Logo Vostro Barbieri">
-                    </div>
-                    <div class="carousel-item">
                         <img class="second-slide" src="imagens/interiorLoja.jpg" alt="Imagem Interior Loja">
                     </div>
                     <div class="carousel-item">
@@ -110,27 +115,119 @@
 
 
         <div id="servicos">
-
-            <div class="container text-center">
-                <h1>Serviços</h1>
+            <div class="container">
+                <h1 class="text-center"><i class="fas fa-cut fa-1x"></i> Serviços</h1>
                 <div class="row">
-                    <div class="col-xl-4">
-                        <h2 class="">Corte</h2>
-                        <img class="rounded" src="imagens/imagem_servicos1.jpg" alt="Imagem Corte de Cabelo" width="260" height="160">
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed tortor consectetur nulla
-                            imperdiet tristique a ut tellus.</p>
+                    <div class="card-deck">
+                        <div class="col-md-4">
+                            <div class="card shadow-sm p-3 mb-5 bg-white rounded">
+                                <img data-toggle="modal" data-target="#corteModal" class="card-img-top" src="imagens/imagem_servicos1.jpg" alt="Card image cap">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">Corte de Cabelo</h4>
+                                    <button type="button" class="btn btn-primary  btn-block" data-toggle="modal" data-target="#corteModal">Valores</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card shadow-sm p-3 mb-5 bg-white rounded">
+                                <img data-toggle="modal" data-target="#barbaModal" class="card-img-top" src="imagens/imagem_servicos1.jpg" alt="Card image cap">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">Barba</h4>
+                                    <button type="button" class="btn btn-primary  btn-block" data-toggle="modal" data-target="#barbaModal">Valores</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card shadow-sm p-3 mb-5 bg-white rounded">
+                                <img data-toggle="modal" data-target="#sobrancelhaModal" class="card-img-top" src="imagens/imagem_servicos1.jpg" alt="Card image cap">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title">Sobrancelha</h4>
+                                    <button type="button" class="btn btn-primary  btn-block" data-toggle="modal" data-target="#sobrancelhaModal">Valores</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-xl-4">
-                        <h2 class="">Sobrançelha</h2>
-                        <img class="rounded" src="imagens/imagem_servicos1.jpg" alt="Imagem Corte de Cabelo" width="260" height="160">
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed tortor consectetur nulla
-                            imperdiet tristique a ut tellus.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL SERVIÇOS -->
+
+        <div class="modal fade" style="margin-top:60px; " id="corteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title">Corte de Cabelo</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
-                    <div class="col-xl-4">
-                        <h2 class="">Barba</h2>
-                        <img class="rounded" src="imagens/imagem_servicos1.jpg" alt="Imagem Corte de Cabelo" width="260" height="160">
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed tortor consectetur nulla
-                            imperdiet tristique a ut tellus.</p>
+                    <div class="modal-body">
+                        <ul class="list-group">
+                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Corte</span><span class="tagPreco">R$ 35,00</span></li>
+                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Corte Degrade Navalhado</span><span class="tagPreco">R$ 50,00</span></li>
+                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Corte Infantil</span><span class="tagPreco">R$ 35,00</span></li>
+                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Acabamento do Corte (pezinho)</span><span class="tagPreco"> R$20,00</span></li>
+                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Desenho </span><span class="tagPreco">a partir de R$20,00</span></li>
+                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Listra</span> <span class="tagPreco">R$ 5,00</span></li>
+                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Hidratação Capilar</span> <span class="tagPreco">a partir de R$20,00</span></li>
+                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Tintura Capilar</span><span class="tagPreco"> a partir de R$50,00</span></li>
+                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Progressiva </span><span class="tagPreco">a partir de R$60,00</span></li>
+                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Selagem </span><span class="tagPreco">a partir de R$50,00</span></li>
+                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Definitiva (alisante, selante e hidratante)</span><span class="tagPreco"> a partir de R$70,00</span></li>
+                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Corte e Barba</span><span class="tagPreco">R$ 70,00</span></li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Barba -->
+        <div class="modal fade" style="margin-top:60px; " id="barbaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title">Barba</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="list-group">
+                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Barba</span><span class="tagPreco">R$ 35,00</span></li>
+                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Barba Terapia com Máscara Negra</span><span class="tagPreco">R$ 49,00</span></li>
+                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Hidratação de Barba </span><span class="tagPreco">a partir de R$ 50,00</span></li>
+                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Corte Infantil</span><span class="tagPreco">R$ 35,00</span></li>
+                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Tintura Barba a partir de</span><span class="tagPreco"> R$ 50,00</span></li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sobrancelhas -->
+        <div class="modal fade" style="margin-top:60px; " id="sobrancelhaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title">Sobrancelhas</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="list-group">
+                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Sobrancelhas</span><span class="tagPreco">R$ 35,00 </span></li>
+                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Aparar Sobrancelhas</span><span class="tagPreco">R$ 5,00</span></li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                     </div>
                 </div>
             </div>
@@ -145,8 +242,8 @@
         <section class="container redesSociais">
             <div class="row slideanim">
                 <div class="col-sm-12 text-center">
-                    <h1>Instagram</h1>
-                    <!-- LightWidget WIDGET <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/85f34bfa40d35fdeac4b9ade0aaf682c.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>-->
+                    <h1><i class="fab fa-instagram fa-1x"></i> Instagram</h1>
+                    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/85f34bfa40d35fdeac4b9ade0aaf682c.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
                 </div>
             </div>
         </section>
@@ -184,7 +281,7 @@
                         </div>-->
         <div id="equipe">
             <section class="equipe container">
-                <h1 class="text-center equipeTitulo">Equipe</h1>
+                <h1 class="text-center equipeTitulo"><i class="fas fa-users fa-1x"></i> Equipe</h1>
                 <div class="row slideanim">
                     <!-- Início Funcionario Coluna 1 **OBS: Imagens precisam estar em 280x180-->
                     <div class="col-xl-6">
@@ -290,10 +387,11 @@
                         </div>
                     </div>
                     <!-- Fim Funcionario Coluna 2 -->
+                </div>
             </section>
-            </div>
+        </div>
 
-            <!-- Modal Funcionario Caso queira ativar descrição do funcionáiro depois
+        <!-- Modal Funcionario Caso queira ativar descrição do funcionáiro depois
         <div class="modal fade" id="modalFuncionario1" tabindex="-1" role="dialog" aria-labelledby="labelFuncionario1" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
@@ -314,19 +412,18 @@
                 </div>
               </div>
             -->
-            </section>
 
-            <hr class="featurette-divider">
 
-            <div id="localizacao">
-                <h1 class="text-center">Localização</h1>
-                <iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ773RyOExWpMR1afJ2_4EEfg&key=AIzaSyBXg3kLQsuHqopj49NYeMmIUv7isW_sU0Y"
-                    allowfullscreen></iframe>
-                <section class="googleMapsSecao container-fluid"></section>
-                <section class="endereco container">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <address>
+        <hr class="featurette-divider">
+
+        <div id="localizacao">
+            <h1 class="text-center"><i class="fas fa-map-marked-alt 1x"></i> Localização</h1>
+            <iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ773RyOExWpMR1afJ2_4EEfg&key=AIzaSyBXg3kLQsuHqopj49NYeMmIUv7isW_sU0Y" allowfullscreen></iframe>
+            <section class="googleMapsSecao container-fluid"></section>
+            <section class="endereco container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <address>
                                 <strong>Endereço</strong>: Área Especial 4 Lote G/H Loja 14 Edifício Olympique, Guará II, Brasília
                                 - DF, 71070-641
                                 <br>
@@ -336,63 +433,58 @@
                                 <br>
                                 <strong>Horário</strong>: segunda a sexta - 11h às 21h/30 / sábado - 09h às 20h / domingo - fechado
                             </address>
-                        </div>
-                    </div>
-                </section>
-                </section>
-            </div>
-
-
-            <!-- FOOTER -->
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <!-- Apenas Curtir-->
-                        <!-- <div class="fb-like" data-href="https://www.facebook.com/vostro.barbieri/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>-->
                     </div>
                 </div>
-            </div>
+            </section>
+        </div>
 
 
+        <!-- FOOTER -->
 
-            <footer class="container text-center">
-                <div class="fb-page" data-href="https://www.facebook.com/facebook" data-width="380" data-hide-cover="false" data-show-facepile="false"></div>
-                <div class="socialBarFooter">
-                    <a href="https://www.instagram.com/vostro.barbieri/"><i class="fab fa-instagram fa-3x"></i></a>
-                    <a href="https://www.facebook.com/vostro.barbieri/"><i class="fab fa-facebook fa-3x"></i></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <div class="fb-like" data-href="https://www.facebook.com/vostro.barbieri/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
                 </div>
-                <div>
-                    <a href="http://www.vostrobarbieri.com.br">
+            </div>
+        </div>
+
+
+
+        <footer class="container text-center">
+            <div class="socialBarFooter">
+                <a href="https://www.instagram.com/vostro.barbieri/"><i class="fab fa-instagram fa-3x"></i></a>
+                <a href="https://www.facebook.com/vostro.barbieri/"><i class="fab fa-facebook fa-3x"></i></a>
+            </div>
+            <div>
+                <a href="http://www.vostrobarbieri.com.br">
                         www.
                         <strong>vostrobarbieri</strong>.com.br
                     </a>
-                </div>
-                <p>Todos os direitos reservados | &copy; 2018 Desenvolvido por
-                    <a href="http://www.danilomarra.com.br">Danilo Marra</a> &middot;
-                    <a href="http://danilomarra.com.br/politica.html">Privacidade</a> &middot;
-                    <a href="http://danilomarra.com.br/politica.html">Termos de Uso</a>
-                </p>
+            </div>
+            <p>Todos os direitos reservados | &copy; 2018 Desenvolvido por
+                <a href="http://www.danilomarra.com.br">Danilo Marra</a> &middot;
+                <a href="http://danilomarra.com.br/politica.html">Privacidade</a> &middot;
+                <a href="http://danilomarra.com.br/politica.html">Termos de Uso</a>
+            </p>
 
-                <a href="#home" title="Ir para o topo">
+            <a href="#home" title="Ir para o topo">
                     <i class="fas fa-chevron-up"></i>
                 </a>
-            </footer>
-            
+        </footer>
+
     </main>
     <!-- JS, JQUERY, Carousel e slideanim-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             // Add smooth scrolling to all links in navbar + footer link
-            $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+            $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
                 // Make sure this.hash has a value before overriding default behavior
                 if (this.hash !== "") {
                     // Prevent default anchor click behavior
@@ -405,7 +497,7 @@
                     // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
                     $('html, body').animate({
                         scrollTop: $(hash).offset().top
-                    }, 900, function () {
+                    }, 900, function() {
 
                         // Add hash (#) to URL when done scrolling (default click behavior)
                         window.location.hash = hash;
@@ -413,8 +505,8 @@
                 } // End if
             });
 
-            $(window).scroll(function () {
-                $(".slideanim").each(function () {
+            $(window).scroll(function() {
+                $(".slideanim").each(function() {
                     var pos = $(this).offset().top;
 
                     var winTop = $(window).scrollTop();
@@ -424,6 +516,7 @@
                 });
             });
         })
+
     </script>
 </body>
 
