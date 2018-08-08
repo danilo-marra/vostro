@@ -49,7 +49,7 @@
         <nav class="navbar navbar-expand-md navbar-dark fixed-top ">
 
             <a class="navbar-brand" href="#">
-                <img src="imagens/vostro_pequena.png" alt="Logo Vostro Barbieri">
+                <img src="imagens/vostro_pequena_transparente.png" height="50" alt="Logo Vostro Barbieri">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -82,21 +82,32 @@
 
     <main role="main">
 
-        <!-- Parallax Section -->
-        <div class="jumbotron paral paralsec"></div>
-
         <div id="home">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
                 </ol>
+                <!-- IMPORTANTE: Imagens precisam estar  1280 x 430 px-->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="second-slide" src="imagens/interiorLoja.jpg" alt="Imagem Interior Loja">
+                        <img class="second-slide" src="/imagens/slideshow/01.jpg" alt="Imagem faxada barbearia">
                     </div>
                     <div class="carousel-item">
-                        <img class="third-slide" src="imagens/interiorLoja2.jpg" alt="Imagem Interior Loja e Funcionários">
+                        <img class="third-slide" src="/imagens/slideshow/02.jpg" alt="Imagem Interior barbearia">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="third-slide" src="/imagens/slideshow/03.jpg" alt="Imagem Interior barbearia e funcionários">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="third-slide" src="/imagens/slideshow/04.jpg" alt="Imagem interior barbearia">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="third-slide" src="/imagens/slideshow/05.jpg" alt="Imagem barbearia">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
@@ -115,102 +126,20 @@
             <div class="container">
                 <h1 class="text-center"><i class="fas fa-cut fa-1x"></i> Serviços</h1>
                 <div class="row">
-                    <div class="card-deck">
-                        <div class="col-md-4">
-                            <div class="card shadow-sm p-3 mb-5 bg-white rounded">
-                                <img data-toggle="modal" data-target="#corteModal" class="card-img-top" src="imagens/imagem_servicos1.jpg" alt="Card image cap">
-                                <div class="card-body text-center">
-                                    <h4 class="card-title">Corte de Cabelo</h4>
-                                    <button type="button" class="btn btn-primary  btn-block" data-toggle="modal" data-target="#corteModal">Valores</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card shadow-sm p-3 mb-5 bg-white rounded">
-                                <img data-toggle="modal" data-target="#barbaModal" class="card-img-top" src="imagens/imagem_servicos1.jpg" alt="Card image cap">
-                                <div class="card-body text-center">
-                                    <h4 class="card-title">Barba</h4>
-                                    <button type="button" class="btn btn-primary  btn-block" data-toggle="modal" data-target="#barbaModal">Valores</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card shadow-sm p-3 mb-5 bg-white rounded">
-                                <img data-toggle="modal" data-target="#sobrancelhaModal" class="card-img-top" src="imagens/imagem_servicos1.jpg" alt="Card image cap">
-                                <div class="card-body text-center">
-                                    <h4 class="card-title">Sobrancelha</h4>
-                                    <button type="button" class="btn btn-primary  btn-block" data-toggle="modal" data-target="#sobrancelhaModal">Valores</button>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-sm-12">
+                        Cortes modernos e tradicionais | Barba modelada e toalha quente | Barba terapia | Progressiva | Selagem | Hidratação | Produtos para e babra | Sobrancelhas
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2 class="text-center">Agende sua reserva</h2>
+                        <i class="fab fa-whatsapp fa-2x"></i>(61) 99392-9601 (whatsapp)
+                        <i class="fas fa-phone fa-2x"></i>(61) 3297-7800
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- MODAL SERVIÇOS -->
-
-        <div class="modal fade" id="corteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <ul class="list-group">
-                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Corte</span><span class="tagPreco">R$ 35,00</span></li>
-                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Corte Degrade Navalhado</span><span class="tagPreco">R$ 50,00</span></li>
-                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Corte Infantil</span><span class="tagPreco">R$ 35,00</span></li>
-                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Acabamento do Corte (pezinho)</span><span class="tagPreco"> R$20,00</span></li>
-                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Desenho </span><span class="tagPreco">a partir de R$20,00</span></li>
-                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Listra</span> <span class="tagPreco">R$ 5,00</span></li>
-                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Hidratação Capilar</span> <span class="tagPreco">a partir de R$20,00</span></li>
-                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Tintura Capilar</span><span class="tagPreco"> a partir de R$50,00</span></li>
-                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Progressiva </span><span class="tagPreco">a partir de R$60,00</span></li>
-                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Selagem </span><span class="tagPreco">a partir de R$50,00</span></li>
-                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Definitiva (alisante, selante e hidratante)</span><span class="tagPreco"> a partir de R$70,00</span></li>
-                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Corte e Barba</span><span class="tagPreco">R$ 70,00</span></li>
-                        </ul>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Barba -->
-        <div class="modal fade" id="barbaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <ul class="list-group">
-                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Barba</span><span class="tagPreco">R$ 35,00</span></li>
-                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Barba Terapia com Máscara Negra</span><span class="tagPreco">R$ 49,00</span></li>
-                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Hidratação de Barba </span><span class="tagPreco">a partir de R$ 50,00</span></li>
-                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Corte Infantil</span><span class="tagPreco">R$ 35,00</span></li>
-                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Tintura Barba a partir de</span><span class="tagPreco"> R$ 50,00</span></li>
-                        </ul>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Sobrancelhas -->
-        <div class="modal fade" id="sobrancelhaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <ul class="list-group">
-                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Sobrancelhas</span><span class="tagPreco">R$ 35,00 </span></li>
-                            <li class="list-group-item"><span class="font-weight-bold tituloPreco">Aparar Sobrancelhas</span><span class="tagPreco">R$ 5,00</span></li>
-                        </ul>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <hr class="featurette-divider">
 
@@ -232,183 +161,28 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="embed-responsive embed-responsive-21by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                            <iframe class="embed-responsive-item" src="https://youtu.be/PbOAWeMtZ70" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
-
-        <!--<div class="col-sm-6">
-                        <div class="row">
-                             Funcionario
-                            <div class="col-sm-8 text-center">
-                                <img class="rounded" src="http://placekitten.com/280/180" alt="Generic placeholder image" width="280" height="180">
-                            </div>
-                            <div class="col-sm-4">
-                                <p> Nome:
-                                    <strong>Alexandre</strong>
-                                </p>
-                                <p> Cargo:
-                                    <strong>Gerente</strong>
-                                </p>
-                                <p>Hobby:
-                                    <strong>Jogar PUBG</strong>
-                                </p>
-                            </div>
-                           Fim Funcionario
-                        </div>-->
-        <div id="equipe">
-            <section class="equipe container">
-                <h1 class="text-center equipeTitulo"><i class="fas fa-users fa-1x"></i> Equipe</h1>
-                <div class="row slideanim">
-                    <!-- Início Funcionario Coluna 1 **OBS: Imagens precisam estar em 280x180-->
-                    <div class="col-xl-6">
-                        <div class="row text-center">
-                            <div class="col-lg-8 text-center">
-                                <img class="rounded" src="http://placekitten.com/280/180" alt="Generic placeholder image" width="280" height="180">
-                            </div>
-                            <div class="col-lg-4">
-                                <p> Nome:
-                                    <strong>Alexandre</strong>
-                                </p>
-                                <p> Cargo:
-                                    <strong>Gerente</strong>
-                                </p>
-                                <p>Hobby:
-                                    <strong>Jogar PUBG</strong>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row text-center">
-                            <div class="col-lg-8 text-center">
-                                <img class="rounded" src="http://placekitten.com/280/180" alt="Generic placeholder image" width="280" height="180">
-                            </div>
-                            <div class="col-lg-4">
-                                <p> Nome:
-                                    <strong>Alexandre</strong>
-                                </p>
-                                <p> Cargo:
-                                    <strong>Gerente</strong>
-                                </p>
-                                <p>Hobby:
-                                    <strong>Jogar PUBG</strong>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row text-center">
-                            <div class="col-lg-8 text-center">
-                                <img class="rounded" src="http://placekitten.com/280/180" alt="Generic placeholder image" width="280" height="180">
-                            </div>
-                            <div class="col-lg-4">
-                                <p> Nome:
-                                    <strong>Alexandre</strong>
-                                </p>
-                                <p> Cargo:
-                                    <strong>Gerente</strong>
-                                </p>
-                                <p>Hobby:
-                                    <strong>Jogar PUBG</strong>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Fim Funcionario Coluna 1 -->
-                    <!-- Início Funcionario Coluna 2 -->
-                    <div class="col-xl-6">
-                        <div class="row text-center">
-                            <div class="col-lg-8 text-center">
-                                <img class="rounded" src="http://placekitten.com/280/180" alt="Generic placeholder image" width="280" height="180">
-                            </div>
-                            <div class="col-lg-4">
-                                <p> Nome:
-                                    <strong>Alexandre</strong>
-                                </p>
-                                <p> Cargo:
-                                    <strong>Gerente</strong>
-                                </p>
-                                <p>Hobby:
-                                    <strong>Jogar PUBG</strong>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row text-center">
-                            <div class="col-lg-8 text-center">
-                                <img class="rounded" src="http://placekitten.com/280/180" alt="Generic placeholder image" width="280" height="180">
-                            </div>
-                            <div class="col-lg-4">
-                                <p> Nome:
-                                    <strong>Alexandre</strong>
-                                </p>
-                                <p> Cargo:
-                                    <strong>Gerente</strong>
-                                </p>
-                                <p>Hobby:
-                                    <strong>Jogar PUBG</strong>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row text-center">
-                            <div class="col-lg-8 text-center">
-                                <img class="rounded" src="http://placekitten.com/280/180" alt="Generic placeholder image" width="280" height="180">
-                            </div>
-                            <div class="col-lg-4">
-                                <p> Nome:
-                                    <strong>Alexandre</strong>
-                                </p>
-                                <p> Cargo:
-                                    <strong>Gerente</strong>
-                                </p>
-                                <p>Hobby:
-                                    <strong>Jogar PUBG</strong>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Fim Funcionario Coluna 2 -->
-                </div>
-            </section>
-        </div>
-
-        <!-- Modal Funcionario Caso queira ativar descrição do funcionáiro depois
-        <div class="modal fade" id="modalFuncionario1" tabindex="-1" role="dialog" aria-labelledby="labelFuncionario1" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="labelFuncionario1">Nome Funcionárrio title</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      ...
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            -->
 
 
         <hr class="featurette-divider">
 
         <div id="localizacao">
-            <h1 class="text-center"><i class="fas fa-map-marked-alt 1x"></i> Localização</h1>
-            <iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ773RyOExWpMR1afJ2_4EEfg&key=AIzaSyBXg3kLQsuHqopj49NYeMmIUv7isW_sU0Y" allowfullscreen></iframe>
-            <section class="googleMapsSecao container-fluid"></section>
-            <section class="endereco container">
+            <section class="endereco container-fluid">
                 <div class="row">
                     <div class="col-sm-12">
-                        <address>
+                        <h1 class="text-center"><i class="fas fa-map-marked-alt 1x"></i> Localização</h1>
+                        <iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ773RyOExWpMR1afJ2_4EEfg&key=AIzaSyBXg3kLQsuHqopj49NYeMmIUv7isW_sU0Y" allowfullscreen></iframe>
+                        <section class="googleMapsSecao container-fluid"></section>
+                        <address class="text-center">
                                 <strong>Endereço</strong>: Área Especial 4 Lote G/H Loja 14 Edifício Olympique, Guará II, Brasília
                                 - DF, 71070-641
                                 <br>
-                                <strong>Telefone</strong>: (61) 99392-9601
-                                <br>
-                                <!-- <strong>Email</strong>:-->
+                                <strong>Whatsapp</strong>: (61) 99392-9601 |  <strong>Telefone</strong>: (61) 3297-7800
                                 <br>
                                 <strong>Horário</strong>: segunda a sexta - 11h às 21h/30 / sábado - 09h às 20h / domingo - fechado
                             </address>
@@ -416,8 +190,6 @@
                 </div>
             </section>
         </div>
-
-
         <!-- FOOTER -->
 
         <div class="container">
@@ -428,8 +200,6 @@
                 </div>
             </div>
         </div>
-
-
 
         <footer class="container text-center">
             <div class="socialBarFooter">
